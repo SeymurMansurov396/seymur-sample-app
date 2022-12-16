@@ -20,6 +20,7 @@
     <module>joke-producer</module>
       <module>joke-consumer</module>
       <module>bff</module>
+      <module>api-gateway</module>
   </modules>
 
   <properties>
