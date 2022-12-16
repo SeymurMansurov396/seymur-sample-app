@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="badb4609-b73a-465c-8a7d-b681db50f30a" name="Changes" comment="add  application.properties">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/target/classes/org/example/ApiGatewayApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/target/classes/org/example/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/target/classes/org/example/controller/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bff/src/main/java/org/example/config/RealmRoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bff/src/main/java/org/example/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bff/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bff/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bff/src/main/java/org/example/controller/JokeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bff/src/main/java/org/example/controller/JokeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bff/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bff/src/main/resources/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bff/target/classes/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bff/target/classes/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bff/target/classes/org/example/controller/JokeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bff/target/classes/org/example/controller/JokeController.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ik9WQnZsmUBgtBzssSvTC61qFV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "D:/projects/seymur-sample-app/api-gateway/src/main/resources",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.splitter.proportion": "0.24159022",
+    "spring.configuration.checksum": "7ba2a52efe52bfb5fc445b07db8e2e3f"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.exception" />
+      <recent name="org.example.dto.response" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\seymur-sample-app\api-gateway\src\main\resources" />
+      <recent name="D:\projects\seymur-sample-app\bff\src\main\java\org\example" />
+      <recent name="D:\projects\seymur-sample-app\bff\src\main\resources" />
+      <recent name="D:\projects\seymur-sample-app\joke-consumer\src\main\resources" />
+      <recent name="D:\projects\seymur-sample-app\joke-producer\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.config" />
+      <recent name="org.example.dto" />
+      <recent name="org.example.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ApiGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BffApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="bff" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.BffApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JokeConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="joke-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.JokeConsumerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JokeProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="joke-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.JokeProducerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.BffApplication" />
+      <item itemvalue="Spring Boot.JokeConsumerApplication" />
+      <item itemvalue="Spring Boot.JokeProducerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
+        <item itemvalue="Spring Boot.BffApplication" />
+        <item itemvalue="Spring Boot.JokeProducerApplication" />
+        <item itemvalue="Spring Boot.JokeConsumerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="badb4609-b73a-465c-8a7d-b681db50f30a" name="Changes" comment="" />
+      <created>1670714747823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670714747823</updated>
+      <workItem from="1670714749419" duration="1836000" />
+      <workItem from="1670790725607" duration="10380000" />
+      <workItem from="1670863558644" duration="3678000" />
+      <workItem from="1671182149511" duration="29527000" />
+      <workItem from="1671223411514" duration="2285000" />
+    </task>
+    <task id="LOCAL-00001" summary="update gitignore for ignoring /target folder">
+      <created>1671200618653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671200618653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add keycloak to docker-compose.yml">
+      <created>1671200662608</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671200662608</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add  ApiGatewayApplication">
+      <created>1671213048385</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671213048385</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add  application.properties">
+      <created>1671213209310</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671213209310</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add  application.properties">
+      <created>1671213396555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671213396555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update gitignore for ignoring /target folder" />
+    <MESSAGE value="add keycloak to docker-compose.yml" />
+    <MESSAGE value="add  ApiGatewayApplication" />
+    <MESSAGE value="add  application.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  application.properties" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

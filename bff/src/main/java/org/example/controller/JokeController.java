@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.List;
 
 @RestController
@@ -22,6 +23,7 @@ public class JokeController {
     }
 
     @GetMapping
+    @RolesAllowed({"joke_read"})
     public ResponseEntity<ApiResponse> getAll( @RequestParam(defaultValue = "0") int page,
                                                @RequestParam(defaultValue = "10") int size) {
         List<JokeResponseDto> jokes = jokeService.getAll(page,size);
@@ -29,17 +31,20 @@ public class JokeController {
     }
 
     @GetMapping("/{id}")
+    @RolesAllowed({"joke_read"})
     public ResponseEntity<ApiResponse> getById(@PathVariable long id) {
         JokeResponseDto joke = jokeService.getById(id);
         return new ResponseEntity<>(new ApiResponse(true, joke), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
+    @RolesAllowed({"joke_delete"})
     public ResponseEntity<ApiResponse> delete(@PathVariable long id) {
         return new ResponseEntity<>(new ApiResponse(jokeService.delete(id).toString(),true), HttpStatus.OK);
     }
 
     @PutMapping
+    @RolesAllowed({"joke_update"})
     public ResponseEntity<ApiResponse> update(@RequestBody UpdateJokeReqDto updateJokeReqDto){
           PersistenceStatus persistenceStatus= jokeService.update(updateJokeReqDto);
           return new ResponseEntity<>(new ApiResponse(persistenceStatus.toString(),true),HttpStatus.OK);
