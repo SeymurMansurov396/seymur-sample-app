@@ -1,0 +1,16 @@
+joke:
+    rabbitmq:
+        exchange: seymur.exchange
+        queue: seymur.queue
+        routingkey: seymur.routingkey
+jokes:
+    endpoint:
+        url: https://official-joke-api.appspot.com/random_joke
+server:
+    port: 8082
+spring:
+    rabbitmq:
+        host: localhost
+        password: guest
+        port: 5672
+        username: guest

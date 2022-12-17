@@ -1,0 +1,21 @@
+joke:
+    rabbitmq:
+        exchange: seymur.exchange
+        queue: seymur.queue
+        routingkey: seymur.routingkey
+server:
+    port: 8083
+spring:
+    data:
+        mongodb:
+            authentication-database: admin
+            database: joke_db
+            host: localhost
+            password: seymurpwd
+            port: 27017
+            username: seymur
+    rabbitmq:
+        host: localhost
+        password: guest
+        port: 5672
+        username: guest

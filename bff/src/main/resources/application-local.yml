@@ -1,0 +1,16 @@
+server:
+    port: 8084
+spring:
+    data:
+        mongodb:
+            authentication-database: admin
+            database: joke_db
+            host: localhost
+            password: seymurpwd
+            port: 27017
+            username: seymur
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://localhost:8085/auth/realms/MY-Realm

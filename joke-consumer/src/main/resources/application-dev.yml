@@ -1,0 +1,21 @@
+joke:
+    rabbitmq:
+        exchange: ${RABBITMQ_EXCHANGE}
+        queue: ${RABBITMQ_QUEUE}
+        routingkey: ${RABBITMQ_ROUTING_KEY}
+server:
+    port: ${SERVER_PORT}
+spring:
+    data:
+        mongodb:
+            authentication-database: ${MONGO_AUTHENTICATION_DB}
+            database: ${MOMGO_DB}
+            host: ${MONGO_HOST}
+            password: ${MONGO_PASSWORD}
+            port: ${MONGO_PORT}
+            username: ${MONGO_USERNAME}
+    rabbitmq:
+        host: ${RABBITMQ_HOST}
+        password: ${RABBITMQ_PASSWORD}
+        port: ${RABBITMQ_PORT}
+        username: ${RABBITMQ_USERNAME}

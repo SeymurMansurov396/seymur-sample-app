@@ -1,0 +1,24 @@
+server:
+    port: 8086
+spring:
+    cloud:
+        gateway:
+            default-filters: TokenRelay
+            routes:
+            -   id: bff
+                predicates: Path=/jokes/**
+                uri: http://localhost:8084
+    security:
+        oauth2:
+            client:
+                provider:
+                    my-keycloak-provider:
+                        issuer-uri: http://localhost:8085/realms/My-Realm
+                registration:
+                    keycloak-spring-gateway-client:
+                        authorization-grant-type: authorization_code
+                        client-id: joke-gateway
+                        client-secret: gLX27tbwhkFwmJ4b2jQIRZzkKYHbJ7iC
+                        provider: my-keycloak-provider
+                        redirect-uri: '{baseUrl}/login/oauth2/code/keycloak'
+                        scope: openid

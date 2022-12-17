@@ -1,0 +1,16 @@
+joke:
+    rabbitmq:
+        exchange: ${RABBITMQ_EXCHANGE}
+        queue: ${RABBITMQ_QUEUE}
+        routingkey: ${RABBITMQ_ROUTING_KEY}
+jokes:
+    endpoint:
+        url: ${JOKES_ENDPOINT_URL}
+server:
+    port: ${SERVER_PORT}
+spring:
+    rabbitmq:
+        host: ${RABBITMQ_HOST}
+        password: ${RABBITMQ_PASSWORD}
+        port: ${RABBITMQ_PORT}
+        username: ${RABBITMQ_USERNAME}
