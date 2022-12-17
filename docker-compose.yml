@@ -33,6 +33,22 @@ services:
        - KEYCLOAK_ADMIN_PASSWORD=admin
      volumes:
        - D:/keycloak-config/:/opt/keycloak/data/import/
+   cache:
+     image: redis:6.2-alpine
+     restart: always
+     ports:
+       - '6379:6379'
+     command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
+     volumes:
+       - cache:/data
+   zipkin:
+     image: openzipkin/zipkin:2
+     ports:
+       - '9411:9411'
+
+volumes:
+  cache:
+    driver: local
 networks:
   rabbitmq-network:
     driver: bridge

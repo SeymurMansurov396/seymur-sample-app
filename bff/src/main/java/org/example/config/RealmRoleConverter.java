@@ -1,3 +1,4 @@
+/*
 package org.example.config;
 
 import org.springframework.core.convert.converter.Converter;
@@ -21,3 +22,4 @@ public class RealmRoleConverter  implements Converter<Jwt, Collection<GrantedAut
                 .collect(Collectors.toList());
     }
 }
+*/

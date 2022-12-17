@@ -1,3 +1,4 @@
+/*
 package org.example.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
@@ -28,3 +29,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return jwtConverter;
     }
 }
+*/
