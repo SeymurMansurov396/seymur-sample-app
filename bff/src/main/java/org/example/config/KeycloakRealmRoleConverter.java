@@ -1,4 +1,3 @@
-/*
 package org.example.config;
 
 import org.springframework.core.convert.converter.Converter;
@@ -11,15 +10,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class RealmRoleConverter  implements Converter<Jwt, Collection<GrantedAuthority>> {
+public class KeycloakRealmRoleConverter implements Converter<Jwt, Collection<GrantedAuthority>> {
     @Override
     public Collection<GrantedAuthority> convert(Jwt source) {
-        final Map<String, List<String>> realmAccess = (Map<String, List<String>>) source.getClaims().get("realm_access");
-        return realmAccess.get("roles")
-                .stream()
-                .map(roleName -> "ROLE_" + roleName) // prefix required by Spring Security for roles.
+        final Map<String, Object> realmAccess = (Map<String, Object>) source.getClaims().get("realm_access");
+        return ((List<String>) realmAccess.get("roles")).stream()
+                .map(roleName -> "ROLE_" + roleName) // prefix to map to a Spring Security "role"
                 .map(SimpleGrantedAuthority::new)
                 .collect(Collectors.toList());
     }
 }
-*/
