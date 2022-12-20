@@ -61,7 +61,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
         apiError.setMessage("Validation error");
         apiError.addValidationErrors(ex.getBindingResult().getFieldErrors());
         apiError.addValidationError(ex.getBindingResult().getGlobalErrors());
-        return buildResponseEntity(apiError,ex);
+        return buildResponseEntity(apiError, ex);
     }
 
     @Override
@@ -123,11 +123,10 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
     }
 
 
-
-
     @ExceptionHandler(Exception.class)
     public ResponseEntity<?> handleRemainException(Exception ex, HttpServletRequest request) {
         String stacktrace = ExceptionUtils.getStackTrace(ex);
+        log.error(ex.getMessage());
         request.setAttribute("exStackTrace", stacktrace);
         String uri = request.getRequestURI();
         ApiError apiError = new ApiError(HttpStatus.INTERNAL_SERVER_ERROR, uri);

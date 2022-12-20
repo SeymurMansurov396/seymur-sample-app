@@ -24,7 +24,7 @@ public class JokeSchedulerImpl implements JokeScheduler {
 
 
     @Override
-    @Scheduled(initialDelay = 1000, fixedRate = 3000)
+    @Scheduled(initialDelay = 1000, fixedRate = 1200000)
     public void fetchJokesAndPublishToRabbitMQ() {
         log.info("Delayed Regular task performed at "
                 + LocalDateTime.now());

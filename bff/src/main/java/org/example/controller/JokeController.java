@@ -29,8 +29,9 @@ public class JokeController {
                                               @RequestParam(defaultValue = "10") int size) {
         log.info("jokes request: ");
         List<JokeResponseDto> jokes = jokeService.getAll(page, size);
-        log.info("jokes response: " + jokes);
-        return new ResponseEntity<>(new ApiResponse(true, jokes), HttpStatus.OK);
+        ApiResponse apiResponse = new ApiResponse(true, jokes);
+        log.info("jokes response: " + apiResponse);
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
 
 
@@ -39,21 +40,28 @@ public class JokeController {
     public ResponseEntity<ApiResponse> getById(@PathVariable long id) {
         log.info("request: " + id);
         JokeResponseDto joke = jokeService.getById(id);
-        log.info("response: " + joke);
-        return new ResponseEntity<>(new ApiResponse(true, joke), HttpStatus.OK);
+        ApiResponse apiResponse = new ApiResponse(true, joke);
+        log.info("response: " + apiResponse);
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAnyRole('JOKE_DELETE')")
     public ResponseEntity<ApiResponse> delete(@PathVariable long id) {
-        return new ResponseEntity<>(new ApiResponse(jokeService.delete(id).toString(), true), HttpStatus.OK);
+        log.info("request: " + id);
+        ApiResponse apiResponse = new ApiResponse(jokeService.delete(id).toString(), true);
+        log.info("response: " + apiResponse);
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
 
     @PutMapping
     @PreAuthorize("hasAnyRole('JOKE_UPDATE')")
     public ResponseEntity<ApiResponse> update(@RequestBody UpdateJokeReqDto updateJokeReqDto) {
+        log.info("request: " + updateJokeReqDto);
         PersistenceStatus persistenceStatus = jokeService.update(updateJokeReqDto);
-        return new ResponseEntity<>(new ApiResponse(persistenceStatus.toString(), true), HttpStatus.OK);
+        ApiResponse apiResponse = new ApiResponse(persistenceStatus.toString(), true);
+        log.info("response: " + apiResponse);
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
 
   /*  @PreAuthorize("hasAuthority('SCOPE_roles')")
